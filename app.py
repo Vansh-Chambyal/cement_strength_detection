@@ -3,9 +3,9 @@ import joblib
 import numpy as np
 
 # Load saved models
-scaler = joblib.load(r"D:\onedrive\Desktop\CEMENT_PREDICTION_USING_LINEAR_REGRESSION_AND_RANDOM_FOREST\models\scaler.pkl")
-kmeans = joblib.load(r"D:\onedrive\Desktop\CEMENT_PREDICTION_USING_LINEAR_REGRESSION_AND_RANDOM_FOREST\models\kmeans.pkl")
-best_models = joblib.load(r"D:\onedrive\Desktop\CEMENT_PREDICTION_USING_LINEAR_REGRESSION_AND_RANDOM_FOREST\models\best_models_per_cluster.pkl")
+scaler = joblib.load("models/scaler.pkl")
+kmeans = joblib.load("models/kmeans.pkl")
+best_models = joblib.load("models/best_models_per_cluster.pkl")
 
 columns = ['Cement (kg/m3)', 'Blast Furnace Slag (kg/m3)', 'Fly Ash (kg/m3)',
            'Water (kg/m3)', 'Superplasticizer (kg/m3)', 'Coarse Aggregate (kg/m3)',
